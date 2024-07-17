@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <!-- <link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.min.css"> -->
+    <link rel="stylesheet"
+          href="https://bootswatch.com/5/sketchy/bootstrap.min.css"
+    >
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+          integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+    >
+</head>
+
+<body>
+    <div class="container">
+        <h1>Users List</h1>
+        <div class="users">
+            <table class="table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th class="sort" onclick="sortByFirtName()">First Name</th>
+                        <th class="sort" onclick="sortByLastName()">Last Name</th>
+                        <th class="sort" onclick="sortByBirthDate()">Birthday</th>
+                    </tr>
+                </thead>
+                <tbody id="usersTable">
+                    <!-- Data will be filled here -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4" class="text-center">
+
+                            <button onclick="previousPage()" style="float: left;"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                            <span id="pageNumbers"></span>
+
+                            <button onclick="nextPage()" style="float: right;"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <script src="./main.js">
+        </script>
+    </div>
+</body>
+
+</html>
